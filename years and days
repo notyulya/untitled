@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // Prompt user for number of minutes
+        System.out.println("Enter the number of minutes:");
+        int a = input.nextInt();
+        convertMinutes(a);
+    }
+
+    public static void convertMinutes(int a) {
+        int hours = a/60;
+        int years = hours/8760;
+        int hours2 = hours % 8760;
+        int days = hours2/24;
+        System.out.println(years + " years " + days + " days");
+    }
+}
